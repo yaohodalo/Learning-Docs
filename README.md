@@ -70,7 +70,7 @@ I also learnt pyspark sql, using sql statements in pyspark and also joining tabl
 The features that I learnt on AWS: 
 
 #### AWS CLI
-I used aws cli to create a s3 bucket and to sync the data from my computer to aws. The aws cli is linux based needs to use linux commands.
+I used aws cli to create a s3 bucket and to sync the data from my computer to aws. The aws cli is linux based and needs to use linux commands.
 - `aws s3 ls` : to list buckets in the s3
 - `aws s3 mb s3://bucket-name`: to create a new bucket
 - `aws bucket-name ls`: to list files in the bucket
