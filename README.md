@@ -1,18 +1,18 @@
 # Learning-Docs
-Learning Pyspark and AWS. These past weeks I learned pyspark and some AWS features. Here is the documentation of what I have learnt so far. Everything is this document only applies to Windows Operating Sytems.
+Learning Pyspark and AWS. These past weeks I learned pyspark and some AWS features. Here is the documentation of what I have learned so far. Everything is this document only applies to Windows Operating Sytems.
 
 ## PySpark 
-Pyspark is an interface for Spark Apache in Python. To have access to this interface, you need to download and install the lates versions of Java, Python(or Anaconda), Hadoop, and Apache. 
+Pyspark is an interface for Spark Apache in Python. To have access to this interface, you need to download and install the most recent versions of Java, Python(or Anaconda), Hadoop, and Apache. 
 ### Installation
 1. Install Java if you don't have it yet:
-[Here is the link to download Java:](https://www.java.com/download/ie_manual.jsp)
+[Here is the link to download Java](https://www.java.com/download/ie_manual.jsp)
 2. Install Python or anaconda if you don't have it yet:
-[Check this link for Python:](https://www.python.org/downloads/) Or [this one for Anaconda](https://www.anaconda.com/products/individual).
-Make sure to check 'add to path' while installing python. 
+[Check this link for Python](https://www.python.org/downloads/) Or [this one for Anaconda](https://www.anaconda.com/products/individual).
+Make sure to check `'add to path'` while installing python. 
 3. [Download Apache Spark](http://spark.apache.org/downloads.html). Unzip it in a folder in your local (C:)
-4. Finally, download winutils.exe for Hadoop. [You can download it from here](https://github.com/cdarlint/winutils). Need to match with the apache spark release that you download previously. 
+4. Finally, download winutils.exe for Hadoop. [You can download it from here](https://github.com/cdarlint/winutils). Need to match with the apache spark release that you previously downloaded. 
 - After downloading and installing Java, Python, Apache, Hadoop you need to add them to the path in your local machine by editing the systems environment variables. 
-Open the 'edit systems environment variables' panel and edit the path by adding these new bin paths. Like this: 
+Open the `'edit systems environment variables'` panel and edit the path by adding the bin paths.
 You can restart your computer after everything. 
 
 ### Another way of installation
@@ -29,12 +29,12 @@ Pyspark has a lot of libraries like Python. Some of them are requirements in ord
  `from pyspark.sql.types import * `: will import all datatypes and fields if I want to create a schema with them
 `from pyspark.sql.functions import* `: will import all functions which can be mathematical functions or other regular functions
 
-#### 2. How to extract 
+#### 2. How to extract data from files
 After importing the libraries needed for the work, I can start by calling the method getOrCreate() which will allow me to get an existing session from spark or to create a new session returned by the builder. 
 `spark = SparkSession.builder.appName('Testing').getOrCreate()`
 After calling this method, I can create a file-path
 `file-path = '/data-file-location-in-the-local-machine'`. If the data file is not in your local machine, you don't need to create a file-path. 
-`df= spark.read.format('format-of-the-data-file').options('depending on the format of the file, you will have different options).load(file-path)'`
+`df= spark.read.format('format-of-the-data-file').options('depending on the format of the file, you will have different options').load()`
 - example 1: my data file is a csv file in my local machine
 `df= spark.read.format('csv').option('header','true').load(file-path)`
 - example 2: my data file is a text file in my local machine
