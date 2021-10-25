@@ -61,4 +61,30 @@ After extracting the data there are some functions to call for data manipulation
 - df.drop_duplicates(): will remove duplicates
 - df.write.save(): wille write into a new file 
 These are the functions I think are important to manipulate with the data. And also there are similar functions in python that I can use with pyspark. For example df.split() or df.fillna()
+I also learnt pyspark sql, using sql statements in pyspark and also joining tables using sql queries in pyspark
+
 ## AWS
+The features that I learnt on AWS: 
+
+#### AWS CLI
+I used aws cli to create s3 bucket and to sync the data from my computer to aws. The aws cli is linux based need to use linux commands.
+`aws s3 ls` : to list buckets in the s3
+`aws s3 mb s3://bucket-name`: to create a new bucket
+`aws bucket-name ls`: to list files in the bucket
+`aws s3 sync. s3://bucktet-name`
+
+#### S3
+I learned to create buckets on aws management console and via aws cli. 
+
+#### RDS
+I learned to create Mysql and Postgres databases using the aws management console via rds.
+
+#### aws glue
+I learned how to use aws glue, the pyspark based feature; how to create crawlers and tried to understand the some libraries that are different from pyspark itself.
+
+#### DynamoDB
+How to create tables using DynamoDb
+#### EC2
+I learned to create security group and settting the inbounds rules
+#### Aws data pipeline
+I went through the data pipeline. Just read the documentations
