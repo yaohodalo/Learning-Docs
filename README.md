@@ -64,7 +64,8 @@ After extracting the data there are some functions to call for data manipulation
 - df.drop_duplicates(): will remove duplicates
 - df.write.save(): will write into a new file 
 These are the functions I think are important to manipulate with the data. And also there are similar functions in python that I can use with pyspark. For example df.split() or df.fillna()
-I also learnt pyspark sql, using sql statements in pyspark and also joining tables using sql queries in pyspark
+I also learnt pyspark sql, using sql statements in pyspark and also joining tables using sql queries in pyspark.
+I used these built-in functions in python versions to run dataframes with python. Python_test file has the code
 
 ## AWS
 The features that I learnt on AWS: 
